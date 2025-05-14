@@ -1,0 +1,715 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+/* Centrado del formulario */
+.login-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Inputs */
+.form-input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Botón */
+.btn-submit {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #0074cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #005fa3;
+}
+
+/* Título y error */
+.login-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.error-msg {
+  color: crimson;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar a:hover {
+  color: #0074cc;
+}
+
+.loader {
+  text-align: center;
+  font-weight: bold;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+
+.account-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.account-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.account-type {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0074cc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.account-details p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.account-balance {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+  margin-top: 1rem;
+}
+
+.account-status {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.account-status.active {
+  color: green;
+}
+
+.account-status.inactive {
+  color: crimson;
+}
+
+.logo-img {
+  height: 60px;
+  vertical-align: middle;
+}
+
+.profile-icon {
+  background-color: #004080;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-left: auto;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.profile-icon:hover {
+  background-color: #003060;
+}
+
+.dashboard-container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+
+.account-card {
+  background: #f9fbfd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #d6e0ee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.account-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.account-type {
+  color: #004080;
+}
+
+.account-status.active {
+  color: #2e7d32;
+}
+
+.account-status.inactive {
+  color: #c62828;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002D4F;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+.profile-icon {
+  background-color: #99c4ff;
+  color: #002244;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.profile-icon:hover {
+  background-color: #77aee9;
+}
+
+
+.account-detail-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.account-detail-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+}
+
+.account-detail-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #002D4F;
+}
+
+.account-detail-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+.btn-transfer {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #002D4F;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-transfer:hover {
+  background-color: #003f6b;
+}
+
+.account-status.active {
+  color: #2e7d32;
+}
+
+.account-status.inactive {
+  color: #c62828;
+}
+
+.transactions-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #002D4F;
+}
+
+.transactions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 0.95rem;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.tx-type {
+  color: #777;
+  font-weight: 600;
+}
+
+.tx-amount {
+  font-weight: bold;
+}
+
+
+.transfer-form input {
+  width: calc(100% - 1rem); /* margen horizontal interno */
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.transfer-form h3 {
+  margin-bottom: 1rem;
+  color: #002D4F;
+}
+
+.transfer-form label {
+  display: block;
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.transfer-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.transfer-form button {
+  margin-top: 1rem;
+  background-color: #002D4F;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.transfer-form button:hover {
+  background-color: #003f6b;
+}
+
+.success-msg {
+  color: green;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.error-msg {
+  color: crimson;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* gris oscuro translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px); /* efecto realista de fondo */
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  animation: modal-fade 0.3s ease-out;
+}
+
+@keyframes modal-fade {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+.profile-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.profile-menu a,
+.profile-menu button {
+  display: block;
+  padding: 0.4rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.profile-menu button:hover,
+.profile-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.register-link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.profile-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.profile-menu a,
+.profile-menu button {
+  display: block;
+  padding: 0.4rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+.profile-menu a,
+.profile-menu button {
+  display: block;
+  padding: 0.4rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+
+.register-link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.error-msg {
+  background-color: #fcebea;
+  color: #c62828;
+  border: 1px solid #f5c6cb;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-container h2 {
+  margin-bottom: 1rem;
+  color: #002D4F;
+}
+
+.profile-form {
+  margin-top: 1.5rem;
+}
+
+.profile-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-form button {
+  margin-top: 1.5rem;
+  background-color: #002D4F;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-msg {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: green;
+}
+
+
+.editable-field {
+  margin-bottom: 1rem;
+}
+
+.field-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.field-with-icon input {
+  flex: 1;
+}
+
+.edit-btn {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.readonly {
+  background-color: #f4f4f4;
+  border-color: #ccc;
+  color: #555;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  color: #004080;
+  border: 1px solid #004080;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #f0f4f9;
+}
+
+.success-box {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #e6f4ea;
+  border: 1px solid #a5d6a7;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.success-box h3 {
+  color: #2e7d32;
+  margin-top: 1rem;
+}
+
+.success-box p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #2e7d32;
+}
+
+.checkmark {
+  font-size: 2.5rem;
+}
+.form-select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.account-info {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: -0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+
+.ticket-box {
+  background-color: #e6f4ea;
+  border: 1px solid #a5d6a7;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.ticket-box h4 {
+  color: #2e7d32;
+  margin-bottom: 0.4rem;
+}
+
+.ticket-box .checkmark {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}

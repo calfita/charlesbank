@@ -1,0 +1,14 @@
+# Entorno de docker
+*.env
+*.env.*
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# Sistema
+.DS_Store
+
+# VSCode
+.vscode/

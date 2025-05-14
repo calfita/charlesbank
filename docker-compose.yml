@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./homebanking-backend
+    container_name: charlesbank-backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./homebanking-backend/.env
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: /api
+    container_name: charlesbank-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always
