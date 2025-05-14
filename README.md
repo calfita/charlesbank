@@ -39,10 +39,3 @@ Aplicación bancaria fullstack construida con React, Node.js, MongoDB y Docker. 
 
 ---
 
-## 🚀 Instrucciones de uso
-
-### 🔧 Clonar el proyecto
-
-```bash
-git clone https://github.com/TU_USUARIO/charlesbank.git
-cd charlesbank
