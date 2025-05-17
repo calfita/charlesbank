@@ -31,7 +31,7 @@ const TransferForm = ({ fromAccountId, currency, onSuccess, fromBalance }) => {
     setError(null);
     try {
       const body = { fromAccountId, toAccountId, amount, currency, concept };
-      await apiFetch("/api/transfers/own", {
+      await apiFetch("/transfers/own", {
         method: "POST",
         body: JSON.stringify(body),
       });
